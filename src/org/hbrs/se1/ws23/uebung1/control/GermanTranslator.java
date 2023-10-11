@@ -9,6 +9,13 @@ public class GermanTranslator implements Translator {
 	 */
 	public String translateNumber( int number ) {
 		// [ihr Source Code aus Übung 1-2]
+		String Numbers []= {"Eines","Zwei","Drei","Vier","Fünf","Sechs","sieben","Acht","Neuen","Zehn"};
+			try {
+				  return Numbers[number-1];
+			} catch (ArrayIndexOutOfBoundsException e){
+				System.out.println("Übersetzung der Zahl"+ number +"nicht" + "möglich");
+
+			}
 
 		return "null";
 	}
